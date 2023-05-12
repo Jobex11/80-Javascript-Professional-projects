@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s;
+}
+body {
+  background: rgb(234, 234, 241);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 200px;
+  height: 350px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgb(57, 46, 46);
+  background-color: white;
+  display: flex;
+  justify-content: inherit;
+  align-items: inherit;
+  background: linear-gradient(blue, red);
+}
+.col {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px black;
+  background: linear-gradient(green, blue);
+}
+
+/*  toggle effect*/
+.toggle {
+  font-weight: bold;
+  color: rgb(241, 243, 244);
+  position: absolute;
+  padding: 5px;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  box-shadow: 0 0 10px black;
+  border-radius: 25%;
+  width: 80px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(60, 60, 78);
+  font-size: 18px;
+}
+.toggle:active {
+  background: rgb(216, 216, 226);
+  color: rgb(45, 45, 57);
+}
+.toggle::before {
+  background: rgb(216, 216, 226);
+  color: rgb(45, 45, 57);
+}
+.toggle:hover {
+  transition: 0.1s;
+  transform: rotate(360deg);
+}
+.light.dark1 {
+  background: rgb(31, 31, 38);
+}
+.container.dark2 {
+  background: linear-gradient(rgb(225, 216, 216), rgb(115, 115, 172));
+}
+.col.dark3 {
+  background: radial-gradient(white, rgb(47, 84, 47));
+}
